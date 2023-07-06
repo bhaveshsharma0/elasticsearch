@@ -9,7 +9,7 @@ into native {es} queries. For example:
 --------------------------------------------------
 POST /_sql/translate
 {
-  "query": "SELECT * FROM library ORDER BY page_count DESC",
+  "query": "SELECT * FROM library where id in ('a','b') and id1 not in ('c','d')",
   "fetch_size": 10
 }
 --------------------------------------------------
